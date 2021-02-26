@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LoopStudios</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Building my Loop studio App with Tailwind Css"
+    />
+    <meta name="robots" content="index,follow" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/favicon-32x32.png"
+    />
+    <!-- TAILWIND CSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- animate on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="main.css"/>
+  </head>
+  <body>
+    <div class="overflow-hidden">
+      <!--the whole wrapper-->
+
+      <header
+        class="relative bg-no-repeat bg-cover bg-center min-h-screen w-full md:min-h-6/3 lg:min-h-6 header-image"
+      >
+        <nav
+          class="flex text-gray-50 items-center justify-between w-4/5 m-auto pt-8"
+        >
+          <h1 class="font-extralight text-4xl font-concert md:text-6xl">
+            <a href="">loopstudios</a>
+          </h1>
+          <button id="burger" class="md:hidden">
+            <i class="fas fa-bars text-4xl"></i>
+          </button>
+          <ul class="hidden md:flex">
+            <li class="px-1.5 nav-item">
+              <a class="nav-link" href="#About"> About</a>
+            </li>
+            <li class="px-1.5 nav-item">
+              <a class="nav-link" href="#Career">Careers</a>
+            </li>
+            <li class="px-1.5 nav-item">
+              <a class="nav-link" href="#Event">Events</a>
+            </li>
+            <li class="px-1.5 nav-item">
+              <a class="nav-link" href="#Product">Products</a>
+            </li>
+            <li class="px-1.5 nav-item">
+              <a class="nav-link" href="#Support">Support</a>
+            </li>
+          </ul>
+        </nav>
+
+        <p
+          class="font-normal md:font-thin tracking-widest absolute top-64 left-11 md:left-32 md:top-36 text-white text-3xl md:text-6xl border-2 pr-10 md:pr-56 py-11 pl-6"
+        >
+          IMMERSIVE<br />
+          EXPERIENCES <br />
+          THAT DELIVER
+        </p>
+      </header>
+      <!--modal -->
+      <div
+        id="modal-body"
+        class="modal-body hidden fixed flex w-full h-full top-0 left-0 z-50 bg-black text-white flex-col"
+      >
+        <div class="modal-logo flex justify-between w-4/5 m-auto">
+          <h1 class="text-4xl">
+            <a href="">loopstudios</a>
+          </h1>
+          <button class="toggle relative" id="toggle">
+            <i class="fas fa-times text-3xl p-4"></i>
+          </button>
+        </div>
+
+        <ul class="flex flex-col w-4/5 m-auto modal-links uppercase font-light">
+          <li class="my-4">
+            <a class="text-3xl links" href="#About"> About</a>
+          </li>
+          <li class="my-4">
+            <a class="text-3xl links" href="#Careers">Careers</a>
+          </li>
+          <li class="my-4">
+            <a class="text-3xl links" href="#Event">Events</a>
+          </li>
+          <li class="my-4">
+            <a class="text-3xl links" href="#Products">Products</a>
+          </li>
+          <li class="my-4">
+            <a class="text-3xl links" href="#Support">Support</a>
+          </li>
+        </ul>
+      </div>
+      <!--modal end-->
+      <section
+        id="About"
+        class="relative hero-section w-full min-h-screen md:bg-white md:w-4/5 m-auto block md:flex md:min-h-90 text-white justify-center items-center"
+      >
+        <div class="w-11/12 m-auto pt-24 md:pt-12" data-aos="fade-right">
+          <img
+            class="w-full h-full object-cover"
+            src="./images/desktop/image-interactive.jpg"
+            alt="a man with a Vr Device "
+          />
+        </div>
+
+        <div
+          data-aos="fade-left"
+          class="w-full -bottom-24 right-32 px-10 relative z-0 md:z-10 bg-white text-gray-900 block md:flex md:justify-center md:items-center md:flex-col pb-20 md:p-4"
+        >
+          <div class="w-full m-auto relative -right-32 md:right-0 md:-left-20">
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="800"
+              data-aos-duration="1000"
+              class="text-4xl tracking-widest text-center md:ml-10"
+            >
+              THE LEADER IN <br />
+              INTERACTIVE VR
+            </h1>
+          </div>
+          <div
+            class="my-4 w-full -px-2 left-32 w-4/6 md:w-full text-center md:text-left md:left-11 relative md:-right-10 md:px-8 md:py-4"
+          >
+            <span
+              class="relative right-0 md:right-11 text-left tracking-widest md:tracking-normal text-sm md:relative leading-loose text-gray-400"
+            >
+              Founded in 2011, Loopstudios has been producing world-class <br />
+              virtual reality projects for some of the best companies around the
+              <br />
+              globe. Our award-winning creations have transformed <br />
+              businesses through digital experiences that bind to their brand.
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="creation relative">
+        <div
+          id="Event"
+          class="creation-body-content min-h-screen pb-20 flex flex-col w-4/5 m-auto md:w-4/5 md:m-auto relative"
+        >
+          <div
+            class="creation-text flex md:text-center md:justify-between my-5"
+          >
+            <h1 class="font-josefin relative left-0 md:left-0 text-4xl">
+              OUR CREATIONS
+            </h1>
+            <button
+              class="text-2xl absolute bottom-2 right-14 text-small font-alata tracking-widest py-2 md:py-0 md:text-small md:relative md:-left-6 md:bottom-0 border border-gray-900 px-11 tracking-widest hover:bg-black hover:text-white"
+            >
+              SEE ALL
+            </button>
+          </div>
+
+          <div
+            id="Career"
+            class="creation-images flex flex-col flex-wrap md:flex-row cursor-pointer"
+          >
+            <div
+              data-aos="fade-right"
+              id="card-box"
+              class="relative bg-no-repeat bg-cover bg-center earth mr-5 mb-4 card h-38 w-full md:h-96 md:w-better"
+            >
+              <img
+                src="./images/mobile/image-deep-earth.jpg"
+                alt="a picture of the earth"
+                class="object-cover w-full h-full block md:hidden"
+              />
+
+              <p
+                class="absolute bottom-4 left-11 text-white text-2xl font-josefin card-box-p"
+              >
+                DEEP <br />
+                EARTH
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              id="card-box"
+              class="relative bg-no-repeat bg-cover bg-center card mr-5 mb-4 arcade h-32 w-full md:h-96 md:w-better"
+            >
+              <img
+                src="./images/mobile/image-night-arcade.jpg"
+                alt="a picture of a cassette tape"
+                class="object-cover w-full h-full block md:hidden"
+              />
+              <p
+                class="absolute bottom-4 left-11 text-white text-2xl font-josefin card-box-p"
+              >
+                NIGHT <br />
+                ARCADE
+              </p>
+            </div>
+            <div
+              data-aos="fade-down"
+              id="card-box"
+              class="relative h-38 w-full card mr-5 mb-4 vr md:h-96 bg-no-repeat bg-cover bg-center md:w-better"
+            >
+              <img
+                src="./images/mobile/image-soccer-team.jpg"
+                alt="a picture of a football player"
+                class="object-cover w-full h-full block md:hidden"
+              />
+              <p
+                class="absolute bottom-4 left-11 text-white text-2xl font-josefin card-box-p"
+              >
+                SOCCER <br />
+                TEAM VR
+              </p>
+            </div>
+            <div
+              data-aos="fade-left"
+              id="card-box"
+              class="relative h-38 w-full mr-5 mb-4 card gridd md:h-96 bg-no-repeat bg-cover bg-center md:w-better"
+            >
+              <img
+                src="./images/mobile/image-grid.jpg"
+                alt="a picture of a sport car"
+                class="object-cover w-full h-full block md:hidden"
+              />
+
+              <p
+                class="absolute bottom-4 left-11 text-white text-2xl font-josefin card-box-p"
+              >
+                THE <br />
+                GRID
+              </p>
+            </div>
+            <div
+              data-aos="fade-right"
+              id="card-box"
+              class="relative mr-5 mb-4 h-38 w-full card above-vr md:h-96 bg-no-repeat bg-cover bg-center md:w-better"
+            >
+              <img
+                src="./images/mobile/image-from-above.jpg"
+                alt="a picture of a curvy road on the mountains"
+                class="object-cover w-full h-full block md:hidden"
+              />
+              <p
+                class="absolute bottom-4 left-11 text-white text-2xl font-josefin card-box-p"
+              >
+                FROM UP <br />
+                ABOVE VR
+              </p>
+            </div>
+            <div
+              data-aos="fade-down"
+              id="card-box"
+              class="relative h-38 w-full mr-5 mb-4 card borealis md:h-96 bg-no-repeat bg-cover bg-center md:w-better"
+            >
+              <img
+                src="./images/mobile/image-pocket-borealis.jpg"
+                alt="picture of the moon, star and a mountain"
+                class="object-cover w-full h-full block md:hidden"
+              />
+              <p
+                class="absolute bottom-4 left-11 text-white text-2xl font-josefin card-box-p"
+              >
+                POCKET <br />
+                BOREALIS
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              id="card-box"
+              class="relative mr-5 mb-4 h-38 w-full card curiosity md:h-96 bg-no-repeat bg-cover bg-center md:w-better"
+            >
+              <img
+                src="./images/mobile/image-curiosity.jpg"
+                alt="picture of a network radar"
+                class="object-cover w-full h-full block md:hidden"
+              />
+              <p
+                class="absolute bottom-4 left-11 text-white text-2xl font-josefin card-box-p"
+              >
+                THE <br />
+                CURIOSITY
+              </p>
+            </div>
+            <div
+              data-aos="fade-left"
+              id="card-box"
+              class="relative mr-5 mb-4 h-38 w-full card fisheye md:h-96 bg-no-repeat bg-cover bg-center md:w-better"
+            >
+              <img
+                src="./images/mobile/image-curiosity.jpg"
+                alt="picture of a network radar"
+                class="object-cover w-full h-full block md:hidden"
+              />
+              <p
+                class="absolute bottom-4 left-11 text-white text-2xl font-josefin card-box-p"
+              >
+                MAKE IT <br />
+                FISHEYE
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        id="Support"
+        class="min-h-60 md:min-h-60 bg-black text-white mt-10 relative"
+      >
+        <div
+          class="footer-body w-full flex flex-col relative -bottom-52 md:-bottom-40"
+        >
+          <div
+            class="footer-logo w-4/5 m-auto md:pb-8 flex md:flex-row flex-col justify-between relative"
+          >
+            <h3 class="my-8 pt-16 text-center md:text-left font-bold text-4xl">
+              loopstudios
+            </h3>
+            <ul
+              class="footer-socials flex justify-center items-center relative -bottom-52 md:bottom-0"
+            >
+              <li class="px-1.5 footer-item">
+                <a class="footer-link" href=""
+                  ><img
+                    class="pb-1"
+                    src="./images/icon-facebook.svg"
+                    alt="facebook official logo"
+                /></a>
+              </li>
+              <li class="px-1.5 footer-item">
+                <a class="footer-link" href=""
+                  ><img
+                    class="pb-1"
+                    src="./images/icon-twitter.svg"
+                    alt="twitter logo"
+                /></a>
+              </li>
+              <li class="px-1.5 footer-item">
+                <a class="footer-link" href=""
+                  ><img
+                    class="pb-1"
+                    src="./images/icon-pinterest.svg"
+                    alt="pinterest logo"
+                /></a>
+              </li>
+              <li class="px-1.5 footer-item">
+                <a class="footer-link" href=""
+                  ><img
+                    class="pb-1"
+                    src="./images/icon-instagram.svg"
+                    alt="instagram logo"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="relative w-4/5 m-auto flex flex-col md:flex-row md:justify-between"
+          >
+            <ul
+              class="relative bottom-11 md:bottom-8 flex flex-col md:flex-row items-center md:justify-around my-2 md:m-0"
+            >
+              <li class="py-2 relative left-28 md:-left-4 footer-item md:pr-4">
+                <a class="pb-1 footer-link footer-links" href="#about">About</a>
+              </li>
+              <li class="py-2 relative left-28 md:-left-4 footer-item md:pr-4">
+                <a class="pb-1 footer-link footer-links" href="#careers"
+                  >Careers</a
+                >
+              </li>
+              <li class="py-2 footer-item left-28 relative md:-left-4 md:pr-4">
+                <a class="pb-1 footer-link footer-links" href="#events"
+                  >Events</a
+                >
+              </li>
+              <li class="py-2 footer-item left-28 relative md:-left-4 md:pr-4">
+                <a class="pb-1 footer-link footer-links" href="#products"
+                  >Product</a
+                >
+              </li>
+              <li class="py-2 footer-item left-28 relative md:-left-4 md:pr-4">
+                <a class="pb-1 footer-link footer-links" href="#support"
+                  >Support</a
+                >
+              </li>
+            </ul>
+            <span class="pb-16">
+              <p class="text-gray-600 md:text-white">
+                © 2021 Loopstudios. All rights reserved.
+              </p></span
+            >
+          </div>
+
+          <div
+            class="hidden attribution absolute pb-4 -bottom-16 left-60 text-gray-600"
+          >
+            <a>Challenge by</a>
+
+            <a
+              class="text-blue-300"
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >
+            Coded by
+            <a class="text-blue-300" href="https://github.com/CAMPSLOPY">
+              CampSlopy 👨🏾‍🦲</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- animate On scroll script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- workflow script -->
+    <script src="app.js"></script>
+  </body>
+</html>

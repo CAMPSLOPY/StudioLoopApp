@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,200;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+.header-image {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+    url(/public/images/desktop/image-hero.jpg);
+}
+
+.earth {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+    url(../public/images/desktop/image-deep-earth.jpg);
+}
+
+.arcade {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+    url(../public/images/desktop/image-night-arcade.jpg);
+}
+.vr {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+    url(../public/images/desktop/image-soccer-team.jpg);
+}
+
+.gridd {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+    url(../public/images/desktop/image-grid.jpg);
+}
+
+.above-vr {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+    url(../public/images/desktop/image-from-above.jpg);
+}
+
+.borealis {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+    url(../public/images/desktop/image-pocket-borealis.jpg);
+}
+
+.curiosity {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+    url(../public/images/desktop/image-curiosity.jpg);
+}
+.fisheye {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+    url(../public/images/desktop/image-fisheye.jpg);
+}
+
+.menu:hover {
+  border-bottom: 1px solid #0000;
+}
+
+.footer-body {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#card-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#card-box:hover:before {
+  opacity: 1;
+}
+
+#card-box:hover .card-box-p {
+  color: black;
+  z-index: 3;
+}
+
+.toggle {
+  top: -20px;
+  right: -15px;
+}
+
+.toggle .fa-times {
+  font-size: 2.7rem;
+}
+
+/* desktop styling for the nav links */
+.nav-item {
+  list-style: none;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+  margin-left: 1.5rem;
+}
+
+.nav-link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Alata", sans-serif;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  background-color: #fff;
+  height: 0.2rem;
+  width: 0%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  background-color: #fff;
+  height: 0.2rem;
+  width: 0%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-link::before {
+  right: 32%;
+}
+
+.nav-link::after {
+  left: 32%;
+}
+
+.nav-link:hover::after,
+.nav-link:hover::before {
+  width: 0.8rem;
+  opacity: 1;
+}
+
+/* FOOTER*/
+
+.footer-link::after {
+  left: 20%;
+}
+.footer-link::before {
+  right: 20%;
+}
+
+.footer-links::after {
+  left: 40%;
+}
+.footer-links::before {
+  right: 40%;
+}
+
+.footer-link::before {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  background-color: #fff;
+  height: 0.2rem;
+  width: 0%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  background-color: #fff;
+  height: 0.2rem;
+  width: 0%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer-link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Alata", sans-serif;
+}
+
+.footer-item {
+  list-style: none;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+  margin-left: 1rem;
+  text-align: center;
+}
+.footer-link:hover::after,
+.footer-link:hover::before {
+  width: 0.8rem;
+  opacity: 1;
+}
+
+.footer-logo h3 {
+  font-family: 'Alata', sans-serif;
+  
+}
