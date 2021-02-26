@@ -35,16 +35,16 @@ html {
 
 .borealis {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
-    url(./images/desktop/image-pocket-borealis.jpg);
+    url(.images/desktop/image-pocket-borealis.jpg);
 }
 
 .curiosity {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
-    url(./images/desktop/image-curiosity.jpg);
+    url(../public/images/desktop/image-curiosity.jpg);
 }
 .fisheye {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
-    url(./images/desktop/image-fisheye.jpg);
+    url(../public/images/desktop/image-fisheye.jpg);
 }
 
 .menu:hover {
