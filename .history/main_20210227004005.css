@@ -216,7 +216,5 @@ body {
 }
 
 @media screen and (max-width: 760px){
-  .card-box{
-    width: 100%;
-  }
+  .card
 }
